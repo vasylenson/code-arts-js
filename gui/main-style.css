@@ -1,0 +1,36 @@
+body {
+    background-color: bisque;
+    display: grid;
+    grid-template:
+    ".  header  header  ." auto
+    ".  sidebar main    ." auto /
+    1fr 12rem 40rem 1fr;
+    grid-gap: 1rem;
+}
+
+body * {
+    font-family: monospace;
+    background-color: burlywood;
+}
+
+header {
+    grid-area: header;
+
+    padding: 7px;
+}
+
+div.sidebar {
+    grid-area: sidebar;
+
+    padding: 7px;
+}
+
+div.content {
+    grid-area: main;
+    display: grid;
+}
+
+div.card {
+    border: 2px slategrey solid;
+    border-radius: 5px;
+}
