@@ -1,12 +1,48 @@
 div.content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-auto-rows: 17rem;
     gap: 1rem;
 }
 
 div.card {
     background-color: antiquewhite;
     border-radius: 1rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-rows: minmax(8rem, 1fr) 2fr;
+
+    overflow: hidden;
+}
+
+div.card div.thumbnail {
+    overflow: hidden;
+}
+
+div.card div.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.card h2 {
+    margin: 4px;
+    font-size: x-large;
+}
+
+div.card p {
+    margin: 0 4px 4px 4px;
+}
+
+div.card div.tags {
+    margin: 0 4px 8px 4px;
+}
+
+div.card div.tags span {
+    font-weight: bold;
+}
+
+div.card div.tags span:hover {
+    text-decoration: underline darkorange solid 2px;
+    color: darkorange;
 }

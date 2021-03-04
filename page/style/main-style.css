@@ -4,7 +4,7 @@ body {
     grid-template:
     ".  header  header  ." auto
     ".  sidebar main    ." auto /
-    1fr 12rem 40rem 1fr;
+    1fr 12rem 5fr 1fr;
     gap: 1rem;
 }
 
@@ -20,11 +20,11 @@ header {
     border-bottom: solid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center stretch;
 }
 
 header div.links {
     text-align: right;
-    vertical-align: center;
 }
 
 header div.links a {
