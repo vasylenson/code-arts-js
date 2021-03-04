@@ -1,0 +1,42 @@
+body {
+    background-color: bisque;
+    display: grid;
+    grid-template:
+    ".  header  header  ." auto
+    ".  sidebar main    ." auto /
+    1fr 12rem 40rem 1fr;
+    gap: 1rem;
+}
+
+body * {
+    font-family: monospace;
+    /* background-color: burlywood; */
+}
+
+header {
+    grid-area: header;
+
+    padding: 7px;
+    border-bottom: solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header div.links {
+    text-align: right;
+    vertical-align: center;
+}
+
+header div.links a {
+    color: black;
+}
+
+div.sidebar {
+    grid-area: sidebar;
+
+    padding: 7px;
+}
+
+div.content {
+    grid-area: main;
+}
